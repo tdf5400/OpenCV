@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 img = cv2.resize(cv2.imread('.//picture.jpg'), (640, 480))
-kernel = np.ones((5,5), np.uint8)
+kernel = np.ones((5, 5), np.uint8)
 # 腐蚀
 erosion = cv2.erode(img, kernel, iterations=1)  # 腐蚀次数=1
 # 膨胀

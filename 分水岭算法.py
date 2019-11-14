@@ -3,7 +3,6 @@ import numpy as np
 import cv2
 
 img = cv2.resize(cv2.imread('./picture.jpg'), (640, 480))
-img = cv2.medianBlur(img, 3)
 
 # 转灰度
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
